@@ -1,12 +1,20 @@
-Nxt Trendz - Cart Features
+Nxt Trendz - E-commerce Application
 
-This project is a continuation of the Nxt Trendz application, focusing on implementing essential cart features using React.js concepts.
+This project is a comprehensive e-commerce application named Nxt Trendz built using React.js with various features including authentication, product display, cart management, and navigation.
 
 Features Implemented
 
 Authentication
 
-Unauthenticated users accessing the Cart Route will be redirected to the Login Route.
+Users must log in using valid credentials to access the platform.
+
+Unauthenticated users are redirected to the Login Route when trying to access restricted routes like Cart.
+
+Product Listing and Details
+
+Displays a list of products with sorting and filtering options.
+
+Clicking on a product shows detailed information about the product including description, price, and image.
 
 Cart Functionalities
 
@@ -32,6 +40,20 @@ Remove All Items:
 
 Clicking the Remove All button clears the entire cart, displaying an Empty Cart View.
 
+Routing
+
+Implemented navigation using React Router DOM for seamless routing between:
+
+Login Page
+
+Home Page
+
+Products Page
+
+Product Details Page
+
+Cart Page
+
 Context API Methods
 
 The CartContext provides the following methods:
@@ -51,6 +73,14 @@ decrementCartItemQuantity(productId) - Decreases the quantity of a product in th
 Component Structure
 
 src/App.js
+
+src/components/Login
+
+src/components/Home
+
+src/components/Products
+
+src/components/ProductDetails
 
 src/components/Cart
 
@@ -93,4 +123,3 @@ Primary Colors:
 #ffffff (White)
 
 Font Family: Roboto
-
